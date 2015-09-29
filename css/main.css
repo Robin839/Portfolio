@@ -49,14 +49,12 @@ h3 {
   color: #465058;
   text-align: center;
 }
-
 h4 {
   font-weight: 200;
   font-size: 24px;
   margin: 10px 0 0;
   text-align: center;
 }
-
 h5 {
   font-weight: 300;
   font-size: 20px;
@@ -132,7 +130,7 @@ Layout styles
 Team
 ***********************************/
 .team {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .avatar {
   width: 50%;
@@ -145,6 +143,16 @@ Team
   color: tomato;
   font-size: 70px;
   font-family: 'Changa One', sans-serif;
+  margin-top: 0;
+}
+
+.responsive {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .slick-prev:before, .slick-next:before { 
+    color:black !important;
 }
 
 /**********************************

@@ -6,25 +6,28 @@
     <!--CSS links goes here-->
     <link rel="stylesheet" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <!-- main & responsive CSS links -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <!--body goes here-->
 <body>
-    <header id="top" class="main-header">
-      <a href="index.html" id="logo">
-        <h1>Squad Boys</h1>
-        <h2>From the Westside</h2>
-      </a>
-        <!--Navigation bar goes here-->
-        <nav>
-            <ul>
-                <li><a href="index.html" class="selected">Home</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header id="sticker">
+        <div>
+          <a href="index.html" id="logo">
+            <h1>Squad Boys</h1>
+            <h2>From the Westside</h2>
+          </a>
+            <!--Navigation bar goes here-->
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
         <div class="primary-content">
             <p id="welcome"> Welkom </p>
@@ -33,16 +36,25 @@
             </p>
             <a class="callout" href="team.html">Ga naar Team</a>
         </div>
-	<div class="primary-content">
+        <div class="primary-content">
             <p class="intro">
-		We zijn met allerlei verschillende projecten bezig. We hebben grafische ontwerpers, muziek producers en programmeurs. Van alles dus, wil je ons werk zien? Klik dan op "Ga naar Work" en laat je verbazen!
+                We zijn met allerlei verschillende projecten bezig. We hebben grafische ontwerpers, muziek producers en programmeurs. Van alles dus, wil je ons werk zien? Klik dan op "Ga naar Work" en laat je verbazen!
             </p>
             <a class="callout" href="work.html">Ga naar Work</a>
         </div>
-	<footer>
-       	 <a href="http://twitter.com/robin__83"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-       	 <a href="http://facebook.com/robinappels"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
-       	 <p>&copy; 2015 SQUAD Name...</p>
-	</footer>
+    <footer>
+        <a href="http://twitter.com/robin__83"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="http://facebook.com/robinappels"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <p>&copy; 2015 SQUAD Name...</p>
+    </footer>
+    <!-- Alle JS references voor sticky navbar -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/sticky-master/jquery.sticky.js"></script>
+    <script>
+  $(document).ready(function(){
+    $("#sticker").sticky({topSpacing:8});
+  });
+</script>
+    
 </body>
 </html>
